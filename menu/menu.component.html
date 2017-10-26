@@ -1,0 +1,44 @@
+  <mat-card>
+    <mat-card-title>Material Menu</mat-card-title>
+    <mat-card-content>
+       <h3>Menu with Icons</h3>
+        <h4>&lt;mat-menu&gt;</h4>
+        <mat-card>
+                  <mat-card-content>
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+
+                    <mat-menu #menu="matMenu">
+                      <button mat-menu-item>
+                        <mat-icon> dialpad </mat-icon>
+                        <span> Redial </span>
+                      </button>
+                      <button mat-menu-item disabled>
+                        <mat-icon> voicemail </mat-icon>
+                        <span> Check voicemail </span>
+                      </button>
+                      <button mat-menu-item>
+                        <mat-icon> notifications_off </mat-icon>
+                        <span> Disable alerts </span>
+                      </button>
+                    </mat-menu>
+                  </mat-card-content>
+        </mat-card>
+         <h3>Menu without Icons</h3>
+          <mat-card>
+                    <mat-card-content>
+                      <button mat-icon-button [matMenuTriggerFor]="menu2">
+                        <mat-icon>grade</mat-icon>
+                      </button>
+
+                      <mat-menu #menu2="matMenu">
+                        <button mat-menu-item> Refresh </button>
+                        <button mat-menu-item> Settings </button>
+                        <button mat-menu-item> Help </button>
+                        <button mat-menu-item disabled> Sign Out </button>
+                      </mat-menu>
+                    </mat-card-content>
+                  </mat-card>
+    </mat-card-content>
+  </mat-card>
