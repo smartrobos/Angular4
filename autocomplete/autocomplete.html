@@ -1,0 +1,17 @@
+
+           <mat-card>
+             <mat-card-title>Material Autocomplete</mat-card-title>
+                <h4>&lt;mat-autocomplete&gt;</h4>
+                  <mat-card-content>
+                    <mat-input-container>
+                        <input type="text" matInput name="autocomplete" [matAutocomplete]="auto" placeholder="Your favorite fruit">
+                    </mat-input-container>
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let option of options" [value]="option">
+                        {{ option }}
+                      </mat-option>
+                    </mat-autocomplete>
+                  </mat-card-content>
+            </mat-card>
+            
+            
