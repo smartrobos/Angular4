@@ -1,0 +1,53 @@
+  <mat-card>
+    <mat-card-title>Material Lists</mat-card-title>
+      <mat-card-content>
+        <h3>Basic List</h3>
+          <h4>&lt;mat-list&gt;</h4>
+        <mat-list>
+            <mat-list-item>Item 1</mat-list-item>
+            <mat-list-item>Item 2</mat-list-item>
+            <mat-list-item>Item 3</mat-list-item>
+        </mat-list>
+  
+        <h3>List with Avatars</h3>
+        <mat-list>
+        <mat-list-item>
+          <img matListAvatar src="https://newtest.smartcodelab.com/assets/img/avatars/1.png">
+          <h3 matLine>John</h3>
+          <p matLine>
+            <span>Brunch?</span>
+            <span class="subline">-- Did you want to go on Sunday? I was thinking</span>
+          </p>
+        </mat-list-item>
+        <mat-list-item>
+          <img matListAvatar src="https://newtest.smartcodelab.com/assets/img/avatars/2.png">
+          <h3 matLine>Peter</h3>
+          <p matLine>
+            <span>Summer BBQ</span>
+            <span class="subline">-- Wish I could come, but I have some special</span>
+          </p>
+        </mat-list-item>
+        <mat-list-item>
+          <img matListAvatar src="https://newtest.smartcodelab.com/assets/img/avatars/3.png">
+          <h3 matLine>Nancy</h3>
+          <p matLine>
+            <span>Oui oui</span>
+            <span class="subline">-- Have you booked the Paris trip?</span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+      
+       <h3>List with Selection</h3>
+      <mat-selection-list #shoes>
+      <mat-list-option *ngFor="let shoe of typesOfShoes">
+        {{shoe}}
+      </mat-list-option>
+      </mat-selection-list>
+      
+      <p>
+      Options selected: {{shoes.selectedOptions.selected.length}}
+      </p>
+      
+      
+      </mat-card-content>  
+  </mat-card>
