@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Material Sidenav</mat-card-title>
+    <mat-card-content>
+        <h4>&lt;mat-sidenav&gt;</h4>
+      
+                <mat-sidenav-container class="example-container">
+                    <mat-sidenav #sidenav class="example-sidenav">
+                       Hello World
+                    </mat-sidenav>
+
+                    <div class="example-sidenav-content">
+                        <button mat-button (click)="sidenav.open()">
+                            Open sidenav
+                        </button>
+                    </div>
+                </mat-sidenav-container>
+            
+    </mat-card-content>
+</mat-card>
