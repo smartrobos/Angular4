@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Material Buttons</mat-card-title>
+    <mat-card-content>
+        <h4>&lt;mat-icon&gt;</h4>
+        <mat-card fxFlex="80%" fxFlex.sm="90%">
+            <mat-card-content fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-around center" fxLayoutWrap="wrap">
+                <mat-icon>grade</mat-icon>
+                <mat-icon>accessibility</mat-icon>
+            </mat-card-content>
+        </mat-card>
+        <h2>List of all Material Icons</h2>
+        <div *ngFor="let icon of icons">
+            <mat-icon>{{ icon }}</mat-icon>
+            <span class="icon-name">{{ icon }}</span>
+        </div>
+    </mat-card-content>
+</mat-card>
