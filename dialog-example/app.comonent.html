@@ -1,0 +1,19 @@
+<mat-card fxFlex="50%" fxFlex.xs="100%">
+  <mat-card-content>
+
+    <button mat-raised-button (click)="openDialog()">Open</button>
+    <br/><br/>
+    <span *ngIf="days">
+      Days:{{this.days}}
+    </span><br/><br/>
+    <span *ngIf="fromDate">
+      From Date:
+      <i>{{this.fromDate}}</i>
+    </span><br/><br/>
+    <span *ngIf="endDate">
+      To Date:
+      <i>{{this.endDate}}</i>
+    </span>
+
+  </mat-card-content>
+</mat-card>
