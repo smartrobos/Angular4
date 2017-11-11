@@ -1,25 +1,21 @@
 <mat-dialog-content style="margin:auto">
-    <div style="text-align:center">
-        <mat-form-field>
-            <mat-select placeholder="select anyone" [(value)]="selected" [(ngModel)]="data.days">
-                <mat-option value="last 10 days">
-                    last 10 days
-                </mat-option>
-            </mat-select>
-        </mat-form-field>
-    </div>
-    <div style="text-align:center">
-        <mat-form-field>
-            <input matInput [matDatepicker]="picker" placeholder="From Date" [(ngModel)]="data.fromDate">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput [matDatepicker]="picker1" placeholder="To Date" [(ngModel)]="data.endDate">
-            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-            <mat-datepicker #picker1></mat-datepicker>
-        </mat-form-field>
-    </div>
+    <mat-form-field>
+        <mat-select placeholder="select anyone" [(value)]="selected" [(ngModel)]="data.days">
+            <mat-option value="last 10 days">
+                last 10 days
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="From Date" [(ngModel)]="data.fromDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker1" placeholder="To Date" [(ngModel)]="data.endDate">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
 </mat-dialog-content>
 <div style="text-align:center">
     <button mat-raised-button color="primary" [mat-dialog-close]="data">Ok</button>
